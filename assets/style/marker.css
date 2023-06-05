@@ -1,0 +1,45 @@
+.marker_container {
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    background-color: #404040;
+    position: relative;
+}
+
+.marker_container::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    margin-top: -6px;
+    border-right: 12px #ffffff solid;
+    border-top: 12px transparent solid;
+    border-bottom: 12px transparent solid;
+}
+
+.marker_container > dl {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    color: #ffffff;
+    padding: 5px 0;
+    line-height: 20px;
+    max-width: 321px;
+    margin: 0;
+}
+
+.marker_container > dl > dt {
+    width: 79px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.marker_container > dl > dd {
+    width: calc(100% - 79px);
+    color: #cb9650;
+    font-weight: bolder;
+    margin: 0;
+    font-size: 14px;
+}
